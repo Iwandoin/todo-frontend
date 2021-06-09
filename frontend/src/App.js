@@ -119,7 +119,7 @@ class App extends Component {
             className="btn btn-danger"
             onClick={() => this.handleDelete(item)}
           >
-            Delete
+            Deleteeeeee
           </button>
         </span>
       </li>
