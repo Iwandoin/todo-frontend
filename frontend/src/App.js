@@ -138,7 +138,7 @@ class App extends Component {
                   className="btn btn-primary"
                   onClick={this.createItem}
                 >
-                  Add tasssssssk
+                  Add task
                 </button>
               </div>
               {this.renderTabList()}
