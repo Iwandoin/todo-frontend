@@ -119,7 +119,7 @@ class App extends Component {
             className="btn btn-danger"
             onClick={() => this.handleDelete(item)}
           >
-            Deleteeeeee
+            Delete
           </button>
         </span>
       </li>
@@ -138,7 +138,7 @@ class App extends Component {
                   className="btn btn-primary"
                   onClick={this.createItem}
                 >
-                  Adddddddd task
+                  Add task
                 </button>
               </div>
               {this.renderTabList()}
