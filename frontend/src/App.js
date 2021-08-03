@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +33,7 @@ class App extends Component {
     this.setState({ modal: !this.state.modal });
   };
 
+
   handleSubmit = (item) => {
     this.toggle();
 
@@ -56,6 +58,13 @@ class App extends Component {
     const item = { title: "", description: "", completed: false };
 
     this.setState({ activeItem: item, modal: !this.state.modal });
+  };
+
+  savelist = () => {
+    axios.get('/return_objects/')
+        .then(function (response) {
+            alert (response.data)
+        })
   };
 
   editItem = (item) => {
@@ -138,7 +147,15 @@ class App extends Component {
                   className="btn btn-primary"
                   onClick={this.createItem}
                 >
-                  Add taaaaaaassssssk
+                  Add task
+                </button>
+              </div>
+              <div className="mb-4">
+                <button
+                  className="btn btn-primary"
+                  onClick={this.savelist}
+                >
+                  SaveS3
                 </button>
               </div>
               {this.renderTabList()}
@@ -159,5 +176,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
