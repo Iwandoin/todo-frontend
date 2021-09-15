@@ -61,7 +61,7 @@ class App extends Component {
   };
 
   savelist = () => {
-    axios.get('/return_objects/')
+    axios.get('/api/return_objects/')
         .then(function (response) {
             alert (response.data)
         })
