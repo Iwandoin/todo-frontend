@@ -147,7 +147,7 @@ class App extends Component {
                   className="btn btn-primary"
                   onClick={this.createItem}
                 >
-                  Add task
+                  Add 1task
                 </button>
               </div>
               <div className="mb-4">
